@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "418077888236",
+    "project_id": "messenger-fbb30",
+    "storage_bucket": "messenger-fbb30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418077888236:android:3a8eb7c7f92cdfbf4d9fc9",
+        "android_client_info": {
+          "package_name": "com.example.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418077888236-ieqlcrahc1cb1u77dhm63bkggav8t4al.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.messenger",
+            "certificate_hash": "0537cf221d0da62435f367f8958ff7cac0270b24"
+          }
+        },
+        {
+          "client_id": "418077888236-sjqvcjb3ls2gso01di6hurvr3o4dp1qu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_ucHEZXzKDqgoPcm8Saws2InIuAbplBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418077888236-sjqvcjb3ls2gso01di6hurvr3o4dp1qu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
