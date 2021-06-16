@@ -59,7 +59,8 @@ class MessageListAdapter:
     }
 
     fun clear(){
-        messages.clear()
+        messages = arrayListOf()
+        differ.submitList(messages)
     }
 
     val differ = AsyncListDiffer(this, diffCallback)

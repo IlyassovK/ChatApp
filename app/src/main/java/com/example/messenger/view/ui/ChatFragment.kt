@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.messenger.R
 import com.example.messenger.databinding.FragmentChatBinding
 import com.example.messenger.model.adapters.MessageListAdapter
+import com.example.messenger.model.dataModel.Message
 import com.example.messenger.model.dataModel.User
 import com.example.messenger.viewmodel.ChatViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -70,15 +71,19 @@ class ChatFragment : Fragment(R.layout.fragment_chat) {
         }
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        chatViewModel.messagesLiveData.postValue(arrayListOf<Message>())
+    }
 
     private fun subscribeToObservers() {
-        messagesAdapter.clear()
         chatViewModel.messagesLiveData.observe(viewLifecycleOwner){
             it?.let {
                 messagesAdapter.messages = it
             }
         }
     }
+
 
     private fun setupRecyclerView() = binding.rvMessages.apply {
         adapter = messagesAdapter

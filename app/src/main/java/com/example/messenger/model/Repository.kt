@@ -173,6 +173,7 @@ class Repository @Inject constructor(
 
     fun loggOut(){
         auth.signOut()
+        userLiveData.postValue(auth.currentUser)
         loggOutLiveData.postValue(true)
     }
 }
